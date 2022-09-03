@@ -1,4 +1,4 @@
-# TUDW - Intro prog 2022 - Ejercitación PHP
+# TUDW - Intro prog 2022 - Ejercitación PHP - GRUPO 39
 
 Acá voy a ir subiendo los ejercicios que realice para las practicas de la asignatura intro prog de la TUDW.
 
