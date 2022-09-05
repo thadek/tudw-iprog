@@ -13,7 +13,9 @@
   * @return float Superficie del círculo.
   */
  function calcularSuperficieCirculo($radio){
-     return M_PI * pow($radio, 2);
+    // float $salida
+    $salida = M_PI * pow($radio, 2);
+    return $salida;
  }
 
 
@@ -25,20 +27,27 @@
    * @return float Superficie de la corona.
    */
   function calcularSuperficieCoronaCircular($radioMayor, $radioMenor){
-      return calcularSuperficieCirculo($radioMayor) - calcularSuperficieCirculo($radioMenor);
+    //float salida, aMayor, aMenor
+    $aMayor = calcularSuperficieCirculo($radioMayor);
+    $aMenor = calcularSuperficieCirculo($radioMenor);
+    $salida = $aMayor - $aMenor;
+    return $salida;
   }
   
 
 
 
   //6C 
-  //Programa principal
-  // int $radio1
-  echo "Ingrese el radio mayor de la corona circular: \n";
-  $radioMay = trim(fgets(STDIN));
-  echo "Ingrese el radio menor de la corona circular: \n";
-  $radioMen = trim(fgets(STDIN));
-  echo "Dada una corona circular de radio mayor ".$radioMay."cm y radio menor ".$radioMen."cm, su superficie es: ".calcularSuperficieCoronaCircular($radioMay, $radioMen)."cm2";
+  //PROGRAMA PRINCIPAL
+    // Muestra la superficie de una corona circular
+    // int $radioMay,$radioMen, $supCorona
+    echo "Ingrese el valor del radio mayor: \n";
+    $radioMay = trim(fgets(STDIN));
+    echo "Ingrese el valor del radio menor : \n";
+    $radioMen = trim(fgets(STDIN));
+    $supCorona = calcularSuperficieCoronaCircular($radioMay, $radioMen);
+    echo "El valor de la superficie de la corona circular es".$supCorona."cm2";
+  //FIN PROGRAMA
 
 
 

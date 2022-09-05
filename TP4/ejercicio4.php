@@ -31,8 +31,11 @@ function calcularAreaTEquilatero($lado){
 }
   
 
-//Programa principal
-// int $lado
-echo "Ingrese el lado en cm del triangulo equilatero: \n";
-$lado = trim(fgets(STDIN));
-echo "Dado un triángulo equilatero de lado ".$lado."cm, su perimetro es: ".calcularPerimetroTEquilatero($lado)."cm y su área es: ".calcularAreaTEquilatero($lado)."cm2";
+//PROGRAMA PRINCIPAL
+    // float $vLado, $vPer, $vArea
+    echo "Ingrese el valor del lado del triángulo equilátero: \n";
+    $vLado = trim(fgets(STDIN));
+    $vPer = calcularPerimetroTEquilatero($vLado);
+    $vArea = calcularAreaTEquilatero($vLado);
+    echo "Dado un triángulo equilatero de lado ".$vLado."cm, su perimetro es: ".$vPer."cm y su área es: ".$vArea."cm2";
+// FIN PROGRAMA

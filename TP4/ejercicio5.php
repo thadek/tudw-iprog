@@ -1,5 +1,5 @@
 <?php 
-/* Ejercicio de dibujar un campo de futbol con módulos */ 
+/* Ejercicio de dibujar un campo de tenis con módulos */ 
 
 /**
  * Funcion que retorna un string con el cartel de Linea de Banda
