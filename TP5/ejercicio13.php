@@ -2,12 +2,12 @@
 // Este módulo verifica las condiciones necesarias para ser seleccionado
 function seleccionEmpleado ($edad, $sexo, $secCom) {
    
-    if ($sexo == "masculino" && $edad < 25 && $secCom == true){
+    if ($sexo == "masculino" && $edad <25 && $secCom == true){
+        
  
         $salida = true;
  
-    } elseif ($sexo == "femenino" && ($edad > 30 || $edad < 40) && $secCom == true) {
- 
+    } elseif ($sexo == "femenino" && ($edad >= 30 && $edad <= 40) && $secCom == true) {
         $salida = true;
    
     } else {
@@ -20,7 +20,7 @@ function seleccionEmpleado ($edad, $sexo, $secCom) {
  
 }
  
-//ROGRAMA PersonalEmpresa
+//PROGRAMA PersonalEmpresa
 //(*Pide los datos del posible personal y entrega si es aceptado o no*)
 //ENTERO edad
 //STRING genero, secuComp
